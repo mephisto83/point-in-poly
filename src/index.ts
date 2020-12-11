@@ -1,5 +1,9 @@
-const world = 'world';
+import CFG from './cfg';
+import test from './test';
 
-export function hello(word: string = world): string {
-  return `Hello ${world}! `;
+
+export default {
+    CFG
 }
+
+test()

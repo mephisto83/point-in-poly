@@ -1,15 +1,22 @@
 {
-  "name": "point-in-poly",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tsc -w"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^4.1.2"
-  }
+    "name": "@mephistowa/point-in-poly",
+    "version": "1.0.6",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "npx tsc -w",
+        "run": "node ./dist/index.js",
+        "build": "npx tsc && node pack-up.js",
+        "push": "npm run build && npm publish . --access publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mephisto83/point-in-poly.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.1.2"
+    }
 }
